@@ -1,3 +1,5 @@
+const path = require('path');
+
 const AutoImport = require('unplugin-auto-import/vite');
 
 module.exports = {
@@ -18,6 +20,8 @@ module.exports = {
     config.plugins.push(
       AutoImport({ imports: ['vue'], dts: 'src/types/auto-imports.d.ts' })
     );
+
+    config.resolve.alias['@'] = path.resolve(__dirname, '..', 'src');
 
     return config;
   },
