@@ -8,8 +8,8 @@
 </samp>
 </div>
 
-<img src="https://img.shields.io/badge/-Nuxt3-00C58E.svg?logo=nuxt.js&style=popout">
-<img src="https://img.shields.io/badge/-Typescript-007ACC.svg?logo=typescript&style=popout">
+![](https://img.shields.io/badge/-Nuxt3-00C58E.svg?logo=nuxt.js&style=popout)
+![](https://img.shields.io/badge/-Typescript-007ACC.svg?logo=typescript&style=popout)
 
 ## Setup
 
