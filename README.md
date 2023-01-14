@@ -1,6 +1,15 @@
-# Nuxt 3 Minimal Starter
+<div align="center">
+<samp>
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# nuxt-template-v3
+
+## Nuxt3+ESLint+Prettier+TailwindCSS+daisyUI+Vitest+Storybook template
+
+</samp>
+</div>
+
+<img src="https://img.shields.io/badge/-Nuxt3-00C58E.svg?logo=nuxt.js&style=popout">
+<img src="https://img.shields.io/badge/-Typescript-007ACC.svg?logo=typescript&style=popout">
 
 ## Setup
 
@@ -22,21 +31,25 @@ pnpm install
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+yarn dev
 ```
 
-## Production
+## Testing
 
-Build the application for production:
+Test files should be located under src/tests/ and should be named `\*.spec.ts`
+
+Run the tests:
 
 ```bash
-npm run build
+yarn test
 ```
 
-Locally preview production build:
+## Storybook
+
+Story files should be located under src/components/ and should be named `\*.stories.ts`; They should be located with the `vue` file
+
+Run the storybook server on http://localhost:6006
 
 ```bash
-npm run preview
+yarn storybook
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
