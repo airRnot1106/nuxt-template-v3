@@ -6,4 +6,12 @@ export default defineNuxtConfig({
   devServer: {
     host: '0.0.0.0',
   },
+  typescript: {
+    tsConfig: {
+      extends: '@tsconfig/strictest/tsconfig.json',
+      compilerOptions: {
+        noImplicitReturns: false, // For middleware
+      },
+    },
+  },
 });
