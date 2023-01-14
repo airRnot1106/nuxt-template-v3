@@ -10,6 +10,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:tailwindcss/recommended',
     '@nuxtjs/eslint-config-typescript',
+    'plugin:storybook/recommended',
     'prettier',
   ],
   parserOptions: {
