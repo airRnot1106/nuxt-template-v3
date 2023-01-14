@@ -17,7 +17,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     sourceType: 'module',
   },
-  plugins: ['vue', '@typescript-eslint', 'tailwindcss'],
+  plugins: ['vue', '@typescript-eslint', 'tailwindcss', 'vitest'],
   rules: {
     /* typescript */
     'dot-notation': 'off',
@@ -91,5 +91,25 @@ module.exports = {
       },
     ],
     'tailwindcss/classnames-order': 'off',
+
+    /* vitest */
+    'vitest/consistent-test-it': [
+      'error',
+      {
+        fn: 'test',
+      },
+    ],
+    'vitest/expect-expect': 'warn',
+    'vitest/lower-case-title': 'off',
+    'vitest/max-nested-describe': [
+      'error',
+      {
+        max: 1,
+      },
+    ],
+    'vitest/no-conditional-tests': 'error',
+    'vitest/no-focused-tests': 'warn',
+    'vitest/no-identical-title': 'error',
+    'vitest/no-skipped-tests': 'warn',
   },
 };
