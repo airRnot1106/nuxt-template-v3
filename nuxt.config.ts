@@ -15,4 +15,9 @@ export default defineNuxtConfig({
     },
   },
   srcDir: 'src',
+  modules: ['@nuxtjs/tailwindcss'],
+  tailwindcss: {
+    exposeConfig: true,
+    configPath: 'tailwind.config',
+  },
 });
