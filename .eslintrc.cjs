@@ -8,6 +8,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:tailwindcss/recommended',
     '@nuxtjs/eslint-config-typescript',
     'prettier',
   ],
@@ -16,7 +17,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     sourceType: 'module',
   },
-  plugins: ['vue', '@typescript-eslint'],
+  plugins: ['vue', '@typescript-eslint', 'tailwindcss'],
   rules: {
     /* typescript */
     'dot-notation': 'off',
@@ -81,5 +82,14 @@ module.exports = {
     /* nuxt */
     'vue/multi-word-component-names': 'off',
     'vue/require-v-for-key': 'off',
+
+    /* tailwindcss */
+    'tailwindcss/no-custom-classname': [
+      'warn',
+      {
+        config: 'tailwind.config.cjs',
+      },
+    ],
+    'tailwindcss/classnames-order': 'off',
   },
 };
